@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   post '/webhooks/:source', to: 'webhooks#create'
   resources :paintings
   
-  resources :comments
+  # resources :comments
 
   devise_for :users
   resources :links do

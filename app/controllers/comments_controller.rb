@@ -21,6 +21,7 @@ class CommentsController < ApplicationController
   # DELETE /comments/1
   # DELETE /comments/1.json
   def destroy
+    binding.irb
     @comment.destroy
     respond_to do |format|
       format.html { redirect_back(fallback_location: root_path, notice: 'Comment was successfully destroyed.') }
