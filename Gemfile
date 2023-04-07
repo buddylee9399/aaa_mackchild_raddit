@@ -75,3 +75,4 @@ gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
 gem 'devise'
 gem 'acts_as_votable'
 gem 'simple_form'
+gem "stripe", "~> 8.0"

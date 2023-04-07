@@ -1,0 +1,36 @@
+<div id="<%= dom_id painting %>">
+  <p>
+    <strong>Title:</strong>
+    <%= painting.title %>
+  </p>
+
+  <p>
+    <strong>Painter:</strong>
+    <%= painting.painter %>
+  </p>
+
+  <p>
+    <strong>Description:</strong>
+    <%= painting.description %>
+  </p>
+
+  <p>
+    <strong>Stripe:</strong>
+    <%= painting.stripe_id %>
+  </p>
+
+  <p>
+    <strong>Stripe price:</strong>
+    <%= painting.stripe_price_id %>
+  </p>
+
+  <p>
+    <strong>Data:</strong>
+    <%= painting.data %>
+  </p>
+
+  <p>
+    <%= image_tag painting.image if painting.image.attached? %>
+  </p>
+
+</div>
